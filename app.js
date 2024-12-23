@@ -6,8 +6,7 @@ const server = http.createServer((req,res)=>{
        res.end('Olá, Mundo!')
 });
 
-
 const PORT = 3000
-server.listen(PORT,(3000)=>{
+server.listen(PORT,(3000) => {
     console.log('Servidor rodando em http://localhost:${3000}/');
 });
