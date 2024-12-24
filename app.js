@@ -1,6 +1,5 @@
 const http = require('http');
 
-
 const server = http.createServer((req,res)=>{
        res.writehead(200,{'Content-Type':'text/plain'});
        res.end('Olá, Mundo!')
