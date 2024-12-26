@@ -5,6 +5,12 @@ const server = http.createServer((req, res) => {
     res.end('Olá, Mundo!');
 });
 
-server.listen(3000, 'localhost', () => {
-    console.log('Servidor rodando em http://localhost:${3000}/');
+server.on('error', (err) => {
+    console.error('Erro no servidor:', err);
+});
+
+    const PORT = 3000;
+    server.listen(3000, 'localhost', () => {
+        console.log('Servidor rodando em http://localhost:${3000}/');
+
 });
